@@ -23,7 +23,7 @@ def preprocess_text(text):
 
 # Home route: Render the index.html
 @app.route('/')
-def index():
+def index2():
     return render_template('index2.html')
 
 # Prediction route: Render prediction.html and handle prediction
