@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Detection</h1>
+        <p class="subtitle">Enter a news headline to check its authenticity.</p>
+        <input type="text" id="newsTitle" placeholder="Enter news headline...">
+        <button onclick="checkNews()">Check News</button>
+        
+        <div class="loading" id="loading"></div>
+        <p id="result"></p>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
